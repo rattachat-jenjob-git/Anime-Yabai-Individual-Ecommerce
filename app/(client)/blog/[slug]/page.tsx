@@ -40,7 +40,7 @@ const SingleBlogPage = async ({
           <div>
             <div className="text-xs flex items-center gap-5 my-7">
               <div className="flex items-center relative group cursor-pointer">
-                {blog?.blogcategories?.map(
+                {/* {blog?.blogcategories?.map(
                   (item: { title: string }, index: number) => (
                     <p
                       key={index}
@@ -49,7 +49,7 @@ const SingleBlogPage = async ({
                       {item?.title}
                     </p>
                   )
-                )}
+                )} */}
                 <span className="absolute left-0 -bottom-1.5 bg-lightColor/30 inline-block w-full h-[2px] group-hover:bg-indigo-800 hover:cursor-pointer hoverEffect" />
               </div>
               <p className="flex items-center gap-1 text-lightColor relative group hover:cursor-pointer hover:text-indigo-800 hoverEffect">
@@ -216,7 +216,7 @@ const BlogLeft = async ({ slug }: { slug: string }) => {
       <div className="border border-lightColor p-5 rounded-md">
         <Title className="text-base">Latest Blogs</Title>
         <div className="space-y-4 mt-4">
-          {blogs?.map((blog: Blog, index: number) => (
+          {blogs?.map((blog: any, index: number) => (
             <Link
               href={`/blog/${blog?.slug?.current}`}
               key={index}
