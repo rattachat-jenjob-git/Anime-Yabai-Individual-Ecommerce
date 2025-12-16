@@ -15,27 +15,27 @@ interface Props {
 const socialLink = [
   {
     title: "Youtube",
-    href: "/",
+    href: "https://www.youtube.com",
     icon: <Youtube className="w-5 h-5" />,
   },
   {
     title: "Github",
-    href: "/",
+    href: "https://github.com",
     icon: <Github className="w-5 h-5" />,
   },
   {
     title: "Linkedin",
-    href: "/",
+    href: "https://www.linkedin.com",
     icon: <Linkedin className="w-5 h-5" />,
   },
   {
     title: "Facebook",
-    href: "/",
+    href: "https://www.facebook.com",
     icon: <Facebook className="w-5 h-5" />,
   },
   {
     title: "Slack",
-    href: "/",
+    href: "https://slack.com",
     icon: <Slack className="w-5 h-5" />,
   },
 ];
