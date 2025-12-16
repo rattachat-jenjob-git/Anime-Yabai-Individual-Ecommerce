@@ -1,4 +1,4 @@
-component 30 % มาจาก Package shadcn.com เพื่อช่วยประหยัดเวลาและเขียน code ได้ง่ายขึ้น
+component 20 % มาจาก Package shadcn.com เพื่อช่วยประหยัดเวลาและเขียน code ได้ง่ายขึ้น
 
 ตัวจัดการระบบ login ใช้ clrek
 
