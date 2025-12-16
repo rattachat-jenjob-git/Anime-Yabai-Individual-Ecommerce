@@ -8,7 +8,7 @@ import { categoriesData, quickLinksData } from "@/constants/data";
 import Link from "next/link";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
-
+import SocialMedia from "./SociaMedia";
 const Footer = () => {
   return (
     <footer className="bg-white border-t">
@@ -68,6 +68,9 @@ const Footer = () => {
               <Button className="w-full">Subscribe</Button>
             </form>
           </div>
+        </div>
+        <div className="pb-4">
+          <SocialMedia/>
         </div>
         <div className="py-6 border-t text-center text-sm text-gray-600">
           <div>
