@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+component 30 % มาจาก Package shadcn.com เพื่อช่วยประหยัดเวลาและเขียน code ได้ง่ายขึ้น
 
-## Getting Started
+ตัวจัดการระบบ login ใช้ clrek
 
-First, run the development server:
+ใช้ sanity.io เป็น Content Management Platform  backend เอาไว้เก็บข้อมูลสินค้า/บทความ/รูปภาพ แล้วให้ Frontend Next.js ดึงไปแสดง
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+ใช้ motion.dev ในการเคลื่อนไหว animation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ใช้ dayjs ในการแสดงวัน
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+ใช้ stripe.com จัดการเรื่องชำระเงิน (Payment)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ใช้ sanity เป็น DATABASE
 
-## Learn More
+npx shadcn@latest init 
+npx shadcn@latest add button ... ... ...
+npm install @clerk/nextjs
+npm i dayjs
+npm run typegen
+npmjs.com
+npm i react-icons
+npm install zustand
+npm install react-hot-toast
+npm i stripe@latest
+npm install -g @sanity/cli
 
-To learn more about Next.js, take a look at the following resources:
+"next": "^16.0.7",
+"react": "^19.2.1",
+"react-dom": "^19.2.1",
+"react-icons": "^5.5.0",
+"sanity": "^4.19.0",
+"styled-components": "^6.1.19",
+"tailwind-merge": "^3.4.0"
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+get stripe_webhook_secret
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+//รันตัวนี้เพื่อให้ข้อมูลเข้า sanity ถ้าไม่ใส่ ข้อมูล order จะไม่เข้า
+stripe listen --forward-to localhost:3000/api/webhook
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+stripe trigger checkout.session.completed
