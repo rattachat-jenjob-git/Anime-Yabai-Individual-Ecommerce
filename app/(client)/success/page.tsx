@@ -39,7 +39,9 @@ const SuccessPageContent = () => {
         </h1>
         <div className="space-y-4 mb-4 text-left">
           <p className="text-gray-700">
-            ขอบคุณสำหรับการสั่งซื้อของคุณ เรากำลังดำเนินการคำสั่งซื้อของคุณและจะจัดส่งให้ในเร็วๆ นี้ อีเมลยืนยันพร้อมรายละเอียดคำสั่งซื้อของคุณจะถูกส่งไปยังกล่องจดหมายของคุณในไม่ช้า
+            ขอบคุณสำหรับการสั่งซื้อของคุณ
+            เรากำลังดำเนินการคำสั่งซื้อของคุณและจะจัดส่งให้ในเร็วๆ นี้
+            อีเมลยืนยันพร้อมรายละเอียดคำสั่งซื้อของคุณจะถูกส่งไปยังกล่องจดหมายของคุณในไม่ช้า
           </p>
           <p className="text-gray-700">
             Order Number:{" "}
@@ -56,7 +58,7 @@ const SuccessPageContent = () => {
           </Link>
           <Link
             href="/orders"
-            className="flex items-center justify-center px-4 py-3 font-semibold bg-black text-white border border-lightGreen rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-md"
+            className="flex items-center justify-center px-4 py-3 font-semibold bg-black text-white rounded-lg hover:bg-gray-800 transition-all duration-300 shadow-md"
           >
             <Package className="w-5 h-5 mr-2" />
             Orders
